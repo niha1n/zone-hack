@@ -1,6 +1,11 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import  FaCalendar from '@fortawesome/free-solid-svg-icons'
+
+const calendar= require('../components/shared/calendar1.png');
+const mp= require('../components/shared/megaphone.png');
+const connect= require('../components/shared/connect.png');
+
+
 
 function AboutPage() {
   return (
@@ -14,10 +19,11 @@ function AboutPage() {
         
 
          </div>
-         <h2>Key Features</h2>
+         <h2 style={{padding:'0 1em'}}>Key Features</h2>
+           <hr style={{left:'1em',color:'#FB2576',width:'20vw',height:'10px'}}/>
          <div className='features'>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={mp} />
                         <Card.Body>
                                 <Card.Title>Announcements</Card.Title>
                                 <Card.Text>
@@ -26,7 +32,7 @@ function AboutPage() {
                          </Card.Body>
                     </Card>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={FaCalendar} />
+                        <Card.Img variant="top" src={calendar} />
                         <Card.Body>
                                 <Card.Title>Event calendar</Card.Title>
                                 <Card.Text>
@@ -35,7 +41,7 @@ function AboutPage() {
                          </Card.Body>
                     </Card>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top"></Card.Img>
+                        <Card.Img variant="top" src={connect} style={{}}/>
                         <Card.Body>
                                 <Card.Title>Connects students</Card.Title>
                                 <Card.Text>
